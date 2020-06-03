@@ -1,5 +1,6 @@
 import { Component, OnInit, ContentChild } from '@angular/core';
-import { HeaderComponent } from '../header/header.component';
+// import { HeaderComponent } from '../header/header.component';
+import { LibHeaderToken } from '../header/lib-header-token';
 
 @Component({
   selector: 'lib-card',
@@ -8,7 +9,8 @@ import { HeaderComponent } from '../header/header.component';
 })
 export class CardComponent implements OnInit {
 
-  @ContentChild(HeaderComponent) header: HeaderComponent|null = null;
+  // @ContentChild(HeaderComponent) header: HeaderComponent|null = null;
+  @ContentChild(LibHeaderToken) header: LibHeaderToken|null = null;
 
   constructor() { }
 
