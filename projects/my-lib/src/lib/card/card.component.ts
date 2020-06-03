@@ -8,7 +8,7 @@ import { HeaderComponent } from '../header/header.component';
 })
 export class CardComponent implements OnInit {
 
-  @ContentChild(HeaderComponent, {static: false}) header: HeaderComponent|null = null;
+  @ContentChild(HeaderComponent) header: HeaderComponent|null = null;
 
   constructor() { }
 
